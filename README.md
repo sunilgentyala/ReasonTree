@@ -187,8 +187,6 @@ Both projects implement reasoning-based, vectorless document retrieval. Here is 
 | **Packaging** | `pyproject.toml`, installable | `requirements.txt` |
 | **Community** | Growing | Established (30k stars) |
 
-PageIndex pioneered this approach and deserves full credit for the core idea. ReasonTree extends it as a production-ready Python library with proper packaging, multi-provider support, and a complete test suite.
-
 ---
 
 ## Configuration
@@ -277,9 +275,3 @@ Discussions, bug reports, and feature requests are welcome via [GitHub Issues](h
 ## License
 
 MIT. See [`LICENSE`](LICENSE).
-
----
-
-## Acknowledgments
-
-The tree-search approach to document retrieval was pioneered by [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex). ReasonTree extends that work as a fully packaged Python library. The [FinanceBench](https://arxiv.org/abs/2311.11944) benchmark (Starling AI) provided the evaluation dataset.

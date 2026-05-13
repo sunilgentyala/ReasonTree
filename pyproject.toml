@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [
-    { name = "Sunil Gentyala", email = "sugentyala@gmail.com" }
+    { name = "Sunil Gentyala", email = "sunil.gentyala@ieee.org" }
 ]
 keywords = ["rag", "retrieval", "llm", "document", "tree", "reasoning"]
 classifiers = [

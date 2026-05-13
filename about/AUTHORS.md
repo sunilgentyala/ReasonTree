@@ -2,7 +2,7 @@
 
 ## Creator
 
-**Sunil Gentyala** — Independent researcher and engineer. Conceived, designed, and built ReasonTree as a research project exploring structured, reasoning-based document retrieval as an alternative to vector similarity search.
+**Sunil Gentyala** (sunil.gentyala@ieee.org) — Independent researcher and engineer. Conceived, designed, and built ReasonTree as a research project exploring structured, reasoning-based document retrieval as an alternative to vector similarity search.
 
 ## Core Development
 
