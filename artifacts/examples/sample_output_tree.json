@@ -1,0 +1,73 @@
+{
+  "document": "Federal Reserve Annual Report 2023 (Sample excerpt, 31 pages)",
+  "generated_by": "ReasonTree v1.1.0",
+  "model": "gpt-4o-2024-11-20",
+  "generated_at": "2026-04-18T14:22:31Z",
+  "tree": {
+    "title": "Document Root",
+    "node_id": "0001",
+    "start_page": 1,
+    "end_page": 31,
+    "description": "The Federal Reserve's 2023 Annual Report covering monetary policy decisions, financial stability monitoring, and international cooperation throughout the year.",
+    "nodes": [
+      {
+        "title": "Monetary Policy",
+        "node_id": "0002",
+        "start_page": 1,
+        "end_page": 20,
+        "summary": "The Federal Reserve continued its rate-tightening cycle in 2023, raising the federal funds rate target to a range of 5.25-5.50%. The committee balanced inflation control against the risk of excessive economic slowdown.",
+        "nodes": [
+          {
+            "title": "Overview of Monetary Policy Actions",
+            "node_id": "0003",
+            "start_page": 1,
+            "end_page": 8,
+            "summary": "The FOMC raised rates four times in 2023 for a cumulative 100 basis points, while signaling a pause as inflation began trending toward the 2% target.",
+            "nodes": []
+          },
+          {
+            "title": "Economic Conditions",
+            "node_id": "0004",
+            "start_page": 9,
+            "end_page": 20,
+            "summary": "GDP growth remained resilient at 2.5% for the year. Unemployment stayed near historic lows despite higher borrowing costs. Core PCE inflation declined from 4.9% to 3.2% over the course of the year.",
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "title": "Financial Stability",
+        "node_id": "0005",
+        "start_page": 21,
+        "end_page": 28,
+        "summary": "The Federal Reserve monitored financial vulnerabilities including commercial real estate stress, bank funding conditions following the spring 2023 regional bank failures, and elevated asset valuations.",
+        "nodes": [
+          {
+            "title": "Monitoring Financial Vulnerabilities",
+            "node_id": "0006",
+            "start_page": 21,
+            "end_page": 24,
+            "summary": "The Fed identified elevated CRE exposure among regional banks, tight funding conditions in the wake of the SVB collapse, and persistent but declining hedge fund leverage as key vulnerabilities.",
+            "nodes": []
+          },
+          {
+            "title": "Domestic and International Cooperation",
+            "node_id": "0007",
+            "start_page": 25,
+            "end_page": 28,
+            "summary": "The Federal Reserve coordinated with the FDIC and OCC on domestic supervisory matters and engaged the FSB and BIS on cross-border regulatory alignment for systemically important institutions.",
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "title": "Federal Reserve Operations",
+        "node_id": "0008",
+        "start_page": 29,
+        "end_page": 31,
+        "summary": "Balance sheet runoff continued at a pace of $60 billion per month for Treasuries and $35 billion for agency MBS. Total assets declined from $8.9 trillion to $7.7 trillion over the year.",
+        "nodes": []
+      }
+    ]
+  }
+}

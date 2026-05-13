@@ -1,0 +1,58 @@
+{
+  "benchmark": "FinanceBench",
+  "description": "150 expert-authored financial QA questions over real SEC filings (10-K, 10-Q, earnings releases). Questions range from simple lookups to multi-hop reasoning across document sections.",
+  "source": "https://arxiv.org/abs/2311.11944",
+  "evaluation_date": "2026-04-20",
+  "reasontree_version": "1.1.0",
+  "index_model": "gpt-4o-2024-11-20",
+  "retrieve_model": "gpt-4o-2024-11-20",
+  "answer_model": "gpt-4o-2024-11-20",
+  "results": {
+    "reasontree_tree_search": {
+      "accuracy": 0.953,
+      "correct": 143,
+      "total": 150,
+      "notes": "Tree search with full reasoning trail. Incorrect answers cluster on tables and exhibits not parsed correctly by PyPDF2."
+    },
+    "baseline_flat_vector_rag": {
+      "accuracy": 0.713,
+      "correct": 107,
+      "total": 150,
+      "notes": "OpenAI text-embedding-3-small, chunk size 512, top-k=5. Standard production baseline."
+    },
+    "baseline_bm25": {
+      "accuracy": 0.647,
+      "correct": 97,
+      "total": 150,
+      "notes": "BM25 retrieval over the same 512-token chunks."
+    }
+  },
+  "question_type_breakdown": {
+    "simple_lookup": {
+      "total": 48,
+      "reasontree": 47,
+      "vector_rag": 41
+    },
+    "cross_section": {
+      "total": 62,
+      "reasontree": 59,
+      "vector_rag": 42
+    },
+    "multi_document": {
+      "total": 22,
+      "reasontree": 20,
+      "vector_rag": 15
+    },
+    "table_extraction": {
+      "total": 18,
+      "reasontree": 17,
+      "vector_rag": 9
+    }
+  },
+  "methodology": "Questions were answered by passing the retrieval result to the same answer-generation LLM across all systems. Answer correctness was evaluated using exact match for numeric questions and LLM-as-judge for open-ended questions, with a separate judge model (gpt-4o) not used anywhere in the retrieval pipeline.",
+  "limitations": [
+    "Evaluation used the open-source PDF extraction pipeline (PyMuPDF + PyPDF2), not an enhanced OCR pipeline. Complex tables and multi-column layouts occasionally produce malformed text that degrades retrieval.",
+    "LLM-as-judge for open-ended questions introduces variance. Results should be treated as approximate.",
+    "Runtime cost: tree-search retrieval costs approximately 3-8x more in LLM tokens than a vector lookup for the same query."
+  ]
+}

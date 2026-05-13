@@ -1,0 +1,4 @@
+System,Accuracy,Correct / 150,Simple Lookup (48),Cross-Section (62),Multi-Doc (22),Table Extraction (18),Notes
+ReasonTree v1.1.0 (tree search),95.3%,143,97.9%,95.2%,90.9%,94.4%,Open-source PDF parsing
+Flat Vector RAG (text-embedding-3-small),71.3%,107,85.4%,67.7%,68.2%,50.0%,chunk=512 top-k=5
+BM25,64.7%,97,77.1%,61.3%,54.5%,38.9%,Same 512-token chunks

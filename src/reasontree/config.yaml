@@ -1,0 +1,9 @@
+model: "gpt-4o-2024-11-20"
+retrieve_model: null          # defaults to model when null
+toc_check_pages: 20
+max_pages_per_node: 10
+max_tokens_per_node: 20000
+add_node_summary: true
+add_node_id: true
+add_doc_description: false
+add_node_text: false

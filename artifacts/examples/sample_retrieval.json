@@ -1,0 +1,29 @@
+{
+  "query": "What actions did the Federal Reserve take to address financial stability concerns in 2023?",
+  "doc_id": "fed-reserve-annual-2023",
+  "model": "gpt-4o-2024-11-20",
+  "timestamp": "2026-04-18T14:23:55Z",
+  "result": {
+    "pages": [21, 22, 23, 24],
+    "node_ids": ["0006"],
+    "reasoning": [
+      {
+        "node": "Document Root",
+        "depth": 0,
+        "selected_children": ["Financial Stability"]
+      },
+      {
+        "node": "Financial Stability",
+        "depth": 1,
+        "selected_children": ["Monitoring Financial Vulnerabilities"]
+      },
+      {
+        "node": "Monitoring Financial Vulnerabilities",
+        "relevant": true,
+        "reasoning": "This section directly covers the Federal Reserve's monitoring of financial vulnerabilities including bank stress and funding conditions, which is exactly what the query asks about.",
+        "pages": "21-24"
+      }
+    ],
+    "content_preview": "[Page 21]\nFollowing the failures of Silicon Valley Bank and Signature Bank in March 2023, the Federal Reserve conducted rapid supervisory reviews of institutions with similar concentration profiles...\n\n[Page 22]\nThe Board of Governors approved enhanced liquidity requirements for institutions with assets between $100 billion and $250 billion, a category that had been subject to tailoring under the 2019 regulatory adjustments...\n\n[Page 23]\nCommercial real estate exposures were elevated at 187 community and regional banks. The Federal Reserve issued supervisory guidance encouraging proactive loss recognition and capital planning under stress scenarios...\n\n[Page 24]\nThe Bank Term Funding Program, established in March 2023, provided an additional liquidity backstop allowing banks to pledge qualifying assets at par value..."
+  }
+}
