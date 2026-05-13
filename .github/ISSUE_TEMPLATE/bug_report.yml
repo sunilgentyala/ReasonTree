@@ -1,0 +1,79 @@
+name: Bug Report
+description: Something is broken or behaving unexpectedly
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please fill in as much detail as you can.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+      placeholder: "When I call client.retrieve(...) with a large PDF, it returns empty pages."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Minimal code or steps that trigger the bug.
+      render: python
+      placeholder: |
+        from reasontree import ReasonTreeClient
+        client = ReasonTreeClient(api_key="...")
+        doc_id = client.index("large_doc.pdf")
+        result = client.retrieve(doc_id, "What is X?")
+        print(result.pages)  # unexpectedly empty
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: version
+    attributes:
+      label: ReasonTree version
+      options:
+        - v1.1.0
+        - main branch
+        - other (specify in description)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: python
+    attributes:
+      label: Python version
+      options:
+        - "3.12"
+        - "3.11"
+        - "3.10"
+    validations:
+      required: true
+
+  - type: input
+    id: model
+    attributes:
+      label: LLM model used
+      placeholder: "gpt-4o-2024-11-20"
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error output or logs
+      description: Paste any tracebacks or relevant log output.
+      render: shell
+    validations:
+      required: false

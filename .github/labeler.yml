@@ -1,0 +1,16 @@
+documentation:
+  - docs/**
+  - "*.md"
+  - about/**
+
+tests:
+  - tests/**
+
+examples:
+  - examples/**
+
+source:
+  - src/**
+
+ci:
+  - .github/**

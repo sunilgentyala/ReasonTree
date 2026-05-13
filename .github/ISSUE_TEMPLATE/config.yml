@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://github.com/sunilgentyala/ReasonTree/tree/main/docs
+    about: Read the docs before opening an issue.
+  - name: Discussions
+    url: https://github.com/sunilgentyala/ReasonTree/discussions
+    about: For questions, ideas, and general discussion.
