@@ -272,6 +272,24 @@ Discussions, bug reports, and feature requests are welcome via [GitHub Issues](h
 
 ---
 
+## How to Cite
+
+If you use ReasonTree in your research, please cite the software:
+
+```bibtex
+@software{gentyala2026reasontree,
+  author    = {Gentyala, Sunil},
+  title     = {ReasonTree},
+  year      = {2026},
+  version   = {1.1.0},
+  url       = {https://github.com/sunilgentyala/ReasonTree}
+}
+```
+
+Machine-readable metadata is in [`CITATION.cff`](CITATION.cff); GitHub shows it under "Cite this repository".
+
+---
+
 ## License
 
 MIT. See [`LICENSE`](LICENSE).

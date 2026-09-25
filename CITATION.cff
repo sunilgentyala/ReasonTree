@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: If you use this software in your research, please cite it as below.
+type: software
+title: ReasonTree
+version: 1.1.0
+date-released: '2026-05-13'
+authors:
+- family-names: Gentyala
+  given-names: Sunil
+  affiliation: HCLTech (HCL America Inc.), Dallas, TX, USA
+  orcid: https://orcid.org/0009-0005-2642-3479
+  email: sunil.gentyala@ieee.org
+repository-code: https://github.com/sunilgentyala/ReasonTree
+license: MIT
+abstract: Reasoning-based document retrieval using hierarchical tree indexing. No vector databases
+  - LLM navigates a structured document tree to find precise answers.
+keywords:
+- ai
+- document-retrieval
+- llm
+- nlp
+- openai
+- pdf
+- python
+- rag
+- tree-search
